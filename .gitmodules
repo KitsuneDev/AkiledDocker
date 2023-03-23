@@ -1,6 +1,3 @@
-[submodule "web/AkiledDockerWeb"]
-	path = web/web_assets
-	url = https://github.com/GabrielTK/AkiledDockerWeb
 [submodule "web/web_assets"]
 	path = web/web_assets
 	url = https://github.com/GabrielTK/AkiledDockerWeb
