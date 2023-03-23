@@ -5,7 +5,7 @@ update:
 	git pull
 	docker compose pull
 setup:
-	update
+	@just update
 	python3 -m pip install -r tools/requirements.txt
 	python3 tools/envFile.py
 	@echo "Setup is done."
@@ -19,7 +19,7 @@ createUser:
 	python3 tools/create_user.py
 	docker compose down
 start:
-	@update
+	@just update
 	@docker compose up -d
 stop:
 	@docker compose down
