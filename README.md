@@ -9,7 +9,7 @@
   * Note: If you are using Docker Desktop, this comes pre-installed
 ## Installation Instructions
 
-1. Clone this repository - it might take a _very_ long time:
+1. Clone this repository:
 ``git clone https://github.com/GabrielTK/AkiledDocker.git``
 1. Initiate the setup procedure: `just setup`
 2. Create a User, and, in PhpMyAdmin, set it's rank to `25`
