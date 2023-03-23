@@ -19,6 +19,7 @@ createUser:
 	python3 tools/create_user.py
 	docker compose down
 start:
+	@update
 	@docker compose up -d
 stop:
 	@docker compose down
