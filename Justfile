@@ -2,10 +2,10 @@ set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
 default:
 	@just --list
 update:
-	git pull
-	docker compose pull
+	@git pull
+	@docker compose pull
 setup:
-	@just update
+	@git pull
 	python3 -m pip install -r tools/requirements.txt
 	python3 tools/envFile.py
 	@echo "Setup is done."
