@@ -12,6 +12,8 @@ services:
       - ./web/configs/nginx.mimetypes.conf:/etc/nginx/nginx.mimetypes.conf
       - ./web/include:/usr/share/nginx/include:ro
       - ./logs/nginx:/usr/share/nginx/logs
+      - ./data/camera/cam:/usr/share/nginx/html/swfs/newfoto/camera
+      - ./data/camera/thumb:/usr/share/nginx/html/swfs/thumbnail
     command: ["dockerize",
               "-template", "/etc/nginx/nginx.conf.template:/etc/nginx/nginx.conf",
               "-template", "/usr/share/nginx/html/system/brain-config.php.template:/usr/share/nginx/html/system/brain-config.php",
